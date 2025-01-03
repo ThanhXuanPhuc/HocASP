@@ -37,8 +37,6 @@ namespace Lab01
             {
                 Console.WriteLine(ex);
             }
-           
-
         }
 
         protected void btXoa_Click(object sender, ImageClickEventArgs e)

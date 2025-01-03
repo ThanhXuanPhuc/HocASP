@@ -75,8 +75,8 @@
 
             <td style="border: 2px solid #28a745; border-collapse: collapse;">
                 <span style="color: #155724; font-weight: bold;">Danh sách bánh được đặt:</span><br />
-                <asp:ListBox ID="lstBanhDaDat" runat="server" SelectionMode="Multiple" Width="197px" Height="79px"></asp:ListBox>
-                <asp:ImageButton ID="btXoa" runat="server" ImageAlign="Bottom"  ImageUrl="~/Images\Images\delete.gif" OnClick="btXoa_Click" />
+                <asp:ListBox ID="lstBanhDaDat" runat="server" SelectionMode="Multiple" Width="197px" Height="112px" Rows="6"></asp:ListBox>
+                <asp:ImageButton ID="btXoa" runat="server" ImageAlign="Bottom"  ImageUrl="~\Images\delete.gif" OnClick="btXoa_Click" />
                 <br />
             </td>
         </tr>
