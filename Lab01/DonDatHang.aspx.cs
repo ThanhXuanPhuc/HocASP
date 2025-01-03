@@ -31,6 +31,19 @@ namespace Lab01
             {
                 string loaibanh = ddlLoaiBanh.SelectedItem.Text;
                 int soluong = int.Parse(txtSoLuong.Text);
+                //Kiem tra ton tai
+                bool find = false;
+                foreach(ListItem item in lstBanhDaDat.Items)
+                {
+                    if (item.Text.StartsWith(loaibanh))
+                    {
+                        string[] arr = item.Text.Split(new char[] { '(', ')' });
+                        soluong += int.Parse(arr[1]);
+                        item.Text = $"{loaibanh} ({soluong})";
+                        find = true; //tìm thấy
+                    }
+                }
+                if(!find)
                 lstBanhDaDat.Items.Add(string.Format("{0} ({1})", loaibanh, soluong));
             }
             catch (Exception ex)
