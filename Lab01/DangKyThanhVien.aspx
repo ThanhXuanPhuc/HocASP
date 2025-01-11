@@ -63,14 +63,14 @@
                 <tr>
                     <td class="auto-style5">Mật khẩu</td>
                     <td class="auto-style2">
-                        <asp:TextBox ID="txtMK" runat="server" ></asp:TextBox>
+                        <asp:TextBox ID="txtMK" runat="server" TextMode="Password" ></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rftMatkhau" runat="server" ControlToValidate="txtMK" CssClass="auto-style8" ErrorMessage="Mật khẩu không được rỗng">(*)</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style6">Nhập lại mật khẩu</td>
                     <td>
-                        <asp:TextBox ID="txtNhapLai" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtNhapLai" runat="server" TextMode="Password"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvNhaplai" runat="server" ControlToValidate="txtNhapLai" CssClass="auto-style8" Display="Dynamic" ErrorMessage="Mật khẩu nhập lại không được rỗng">(*)</asp:RequiredFieldValidator>
                         <asp:CompareValidator ID="cvNhapLai" runat="server" ControlToCompare="txtMK" ControlToValidate="txtNhapLai" CssClass="auto-style8" ErrorMessage="Mật khẩu nhập lại không đúng">(*)</asp:CompareValidator>
                     </td>
@@ -116,7 +116,7 @@
                 <tr>
                     <td class="auto-style6">Giới tính</td>
                     <td>
-                        <asp:CheckBox ID="chkPhai" runat="server" />
+                        <asp:CheckBox ID="chkPhai" runat="server" Text="Nam" />
                     </td>
                 </tr>
                 <tr>
